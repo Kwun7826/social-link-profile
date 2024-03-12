@@ -12,23 +12,99 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      font: 16px Inter;
+      font-weight: 400, 600, 700;
+      color: hsl(0, 0%, 100%); 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+  
+    }
+    .profile  {
+      display: flex;
+      flex-direction: column ;
+      align-items: center;
+      height: 90%;
+      width: 80%;                            
+      border: 1px white solid;
+      margin: 20px;
+      background-color: hsl(0, 0%, 12%);
+    }
+    .container {
+      width: 1000px;
+      height:1000px;
+      background-color: hsl(0, 0%, 8%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }  
+    .img {
+      margin: auto;
+    }
+    .rounded-img {
+      border-radius: 50% ;
+    }
+    .info p:nth-of-type(1) {
+      font-size: 30px;
+      font-weight: bold;
+    }                                              
+    .info p:nth-of-type(2){
+       font-size: 20px;
+       color: hsl(75, 94%, 57%);
+    }
+    .text p {
+      font-size: 20px;
+    }
+    .social {
+      display: flex;
+      flex-direction: column;
+      width: 100%; 
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .social p {
+      border: 1px white solid;
+      width: 100%;
+      text-align: center;
+      width: 60%;
+      padding: 10px;
+      border-radius: 15px;
+      background-color: hsl(0, 0%, 20%);
+      font-weight: bold;
+    } 
+    .attribution {
+      margin: auto;
+    }
   </style>
 </head>
 <body>
-
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
-
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="container">
+    <div class="profile">
+      <div class="img"><img src="assets/images/avatar-jessica.jpeg" class="rounded-img" alt="Jessica"></div>
+      <div class="info">
+        <p>Jessica Randall</p>
+        <p>London, United Kingdom</p>
+      </div>
+      <div class="text">
+        <p>"Front-end developer and avid reader."</p>
+      </div>
+      <div class="social">
+        <p>GitHub</p>
+        <p>Frontend Mentor</p>
+        <p>LinkedIn</p>
+        <P>Twitter</P>
+        <p>Instagram</p>
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </div>
   </div>
+  
+  
 </body>
 </html>
